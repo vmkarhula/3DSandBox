@@ -5,7 +5,6 @@
 #include "glm/glm.hpp"
 #include "glad/glad.h"
 
-#include "Shader.h"
 #include "ShaderProgram.h"
 #include "RNG.h"
 #include "OpenGLTexture.h"
@@ -37,8 +36,6 @@ private:
 	OpenGLTexture m_SmokeTexture;
 
 	glm::mat4 m_Projection;
-
-	//Shader m_ParticleShader;
 
 	ShaderProgram m_ParticleShader;
 

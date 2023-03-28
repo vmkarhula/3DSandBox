@@ -6,7 +6,6 @@
 #include "glad/glad.h"
 #include "glm/glm.hpp"
 
-#include "Shader.h"
 #include "OpenGLTexture.h"
 #include "Camera.h"
 

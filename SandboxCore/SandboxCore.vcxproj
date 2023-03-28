@@ -19,14 +19,21 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\ParticleExercise\Camera.h" />
     <ClInclude Include="..\ParticleExercise\OpenGLDebug.h" />
     <ClInclude Include="..\ParticleExercise\OpenGLTexture.h" />
+    <ClInclude Include="..\ParticleExercise\ParticleSystem.h" />
+    <ClInclude Include="..\ParticleExercise\ParticleUtil.h" />
+    <ClInclude Include="..\ParticleExercise\RNG.h" />
     <ClInclude Include="..\ParticleExercise\ShaderProgram.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\external\src\glad.c" />
+    <ClCompile Include="..\ParticleExercise\Camera.cpp" />
     <ClCompile Include="..\ParticleExercise\OpenGLDebug.cpp" />
     <ClCompile Include="..\ParticleExercise\OpenGLTexture.cpp" />
+    <ClCompile Include="..\ParticleExercise\ParticleSystem.cpp" />
+    <ClCompile Include="..\ParticleExercise\RNG.cpp" />
     <ClCompile Include="..\ParticleExercise\ShaderProgram.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
