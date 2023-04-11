@@ -19,22 +19,23 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\ParticleExercise\Camera.h" />
-    <ClInclude Include="..\ParticleExercise\OpenGLDebug.h" />
-    <ClInclude Include="..\ParticleExercise\OpenGLTexture.h" />
-    <ClInclude Include="..\ParticleExercise\ParticleSystem.h" />
-    <ClInclude Include="..\ParticleExercise\ParticleUtil.h" />
-    <ClInclude Include="..\ParticleExercise\RNG.h" />
-    <ClInclude Include="..\ParticleExercise\ShaderProgram.h" />
+    <ClInclude Include="..\common\Camera.h" />
+    <ClInclude Include="..\common\RNG.h" />
+    <ClInclude Include="..\common\SceneBase.h" />
+    <ClInclude Include="..\core\renderer\OpenGLDebug.h" />
+    <ClInclude Include="..\core\renderer\OpenGLTexture.h" />
+    <ClInclude Include="..\core\renderer\ParticleSystem.h" />
+    <ClInclude Include="..\core\renderer\ParticleUtil.h" />
+    <ClInclude Include="..\core\renderer\ShaderProgram.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\common\Camera.cpp" />
+    <ClCompile Include="..\common\RNG.cpp" />
+    <ClCompile Include="..\core\renderer\OpenGLDebug.cpp" />
+    <ClCompile Include="..\core\renderer\OpenGLTexture.cpp" />
+    <ClCompile Include="..\core\renderer\ParticleSystem.cpp" />
+    <ClCompile Include="..\core\renderer\ShaderProgram.cpp" />
     <ClCompile Include="..\external\src\glad.c" />
-    <ClCompile Include="..\ParticleExercise\Camera.cpp" />
-    <ClCompile Include="..\ParticleExercise\OpenGLDebug.cpp" />
-    <ClCompile Include="..\ParticleExercise\OpenGLTexture.cpp" />
-    <ClCompile Include="..\ParticleExercise\ParticleSystem.cpp" />
-    <ClCompile Include="..\ParticleExercise\RNG.cpp" />
-    <ClCompile Include="..\ParticleExercise\ShaderProgram.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -97,7 +98,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>F:\dev\OpenGLSandbox\external\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)common\;$(SolutionDir)external\include\;F:\dev\OpenGLSandbox\external\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -113,7 +114,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>F:\dev\OpenGLSandbox\external\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)common\;$(SolutionDir)external\include\;F:\dev\OpenGLSandbox\external\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -129,7 +130,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>F:\dev\OpenGLSandbox\external\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)common\;$(SolutionDir)external\include\;F:\dev\OpenGLSandbox\external\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -145,7 +146,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>F:\dev\OpenGLSandbox\external\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)common\;$(SolutionDir)external\include\;F:\dev\OpenGLSandbox\external\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>

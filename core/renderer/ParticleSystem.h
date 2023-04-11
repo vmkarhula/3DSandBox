@@ -5,7 +5,6 @@
 #include "glm/glm.hpp"
 #include "glad/glad.h"
 
-#include "Shader.h"
 #include "ShaderProgram.h"
 #include "RNG.h"
 #include "OpenGLTexture.h"

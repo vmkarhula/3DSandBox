@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ParticleExercise", "ParticleExercise\ParticleExercise.vcxproj", "{4C109260-2FAA-4838-BBB3-6C610F1DC750}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A4B6AC6C-FAF2-4089-ADC7-EC05F6837EBE} = {A4B6AC6C-FAF2-4089-ADC7-EC05F6837EBE}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SandboxCore", "SandboxCore\SandboxCore.vcxproj", "{A4B6AC6C-FAF2-4089-ADC7-EC05F6837EBE}"
 EndProject

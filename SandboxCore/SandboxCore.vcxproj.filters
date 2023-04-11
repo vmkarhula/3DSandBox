@@ -42,49 +42,52 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\ParticleExercise\ShaderProgram.h">
-      <Filter>Header Files\Core\Renderer</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ParticleExercise\OpenGLDebug.h">
-      <Filter>Header Files\Core\Renderer</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ParticleExercise\OpenGLTexture.h">
-      <Filter>Header Files\Core\Renderer</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ParticleExercise\ParticleSystem.h">
-      <Filter>Header Files\Core\Renderer</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ParticleExercise\ParticleUtil.h">
-      <Filter>Header Files\Core\Renderer</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ParticleExercise\RNG.h">
-      <Filter>Header Files\Misc</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ParticleExercise\Camera.h">
+    <ClInclude Include="..\common\SceneBase.h">
       <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\Camera.h">
+      <Filter>Header Files\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\renderer\OpenGLDebug.h">
+      <Filter>Header Files\Core\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\renderer\OpenGLTexture.h">
+      <Filter>Header Files\Core\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\renderer\ParticleSystem.h">
+      <Filter>Header Files\Core\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\renderer\ParticleUtil.h">
+      <Filter>Header Files\Core\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\renderer\ShaderProgram.h">
+      <Filter>Header Files\Core\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\RNG.h">
+      <Filter>Header Files\Misc</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\external\src\glad.c">
       <Filter>Source Files\glad</Filter>
     </ClCompile>
-    <ClCompile Include="..\ParticleExercise\ShaderProgram.cpp">
-      <Filter>Source Files\Core\Renderer</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ParticleExercise\OpenGLDebug.cpp">
-      <Filter>Source Files\Core\Renderer</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ParticleExercise\OpenGLTexture.cpp">
-      <Filter>Source Files\Core\Renderer</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ParticleExercise\ParticleSystem.cpp">
-      <Filter>Source Files\Core\Renderer</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ParticleExercise\RNG.cpp">
-      <Filter>Source Files\Core\Misc</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ParticleExercise\Camera.cpp">
+    <ClCompile Include="..\common\Camera.cpp">
       <Filter>Source Files\Core\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\renderer\OpenGLDebug.cpp">
+      <Filter>Source Files\Core\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\renderer\OpenGLTexture.cpp">
+      <Filter>Source Files\Core\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\renderer\ParticleSystem.cpp">
+      <Filter>Source Files\Core\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\renderer\ShaderProgram.cpp">
+      <Filter>Source Files\Core\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\RNG.cpp">
+      <Filter>Source Files\Core\Misc</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

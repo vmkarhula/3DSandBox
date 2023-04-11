@@ -6,15 +6,12 @@
 
 #include "glm/gtc/matrix_transform.hpp"
 
-#include "OpenGLDebug.h"
+#include "renderer/OpenGLDebug.h"
 
 
 ParticleScene::ParticleScene():
-	m_MainWindow(nullptr),
 	m_GridShader("GridShader"),
-	m_MouseGrab(false),
-	m_ParticleSystem(nullptr),
-	m_PreviousFrameTimestamp(0.0f)
+	m_ParticleSystem(nullptr)
 {
 }
 

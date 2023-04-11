@@ -6,10 +6,14 @@ class Camera
 {
 public:
 
-	enum class Mode {Orbit};
+	enum class Mode {Orbit, Freefly};
 	
 	Camera();
 	~Camera();
+	
+	// Copying camera can be used for example for debug views and such
+	Camera(const Camera& rhs) = default;
+	Camera& operator=(const Camera& rhs) = default;
 
 	void SetPolarFloat(glm::vec3 target, float radius, float heading, float pitch);
 

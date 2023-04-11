@@ -6,31 +6,16 @@
 #include "glad/glad.h"
 #include "glm/glm.hpp"
 
-#include "OpenGLTexture.h"
-#include "Camera.h"
+#include "SceneBase.h"
 
-#include "ParticleSystem.h"
-#include "ShaderProgram.h"
+#include "renderer/OpenGLTexture.h"
+#include "renderer/ParticleSystem.h"
+#include "renderer/ShaderProgram.h"
 
 #include <vector>
 
-struct DFCoordinate2D
-{
-	DFCoordinate2D operator-(const DFCoordinate2D& rhs)
-	{
-		DFCoordinate2D result;
-		
-		result.x = this->x - rhs.x;
-		result.y = this->y - rhs.y;
 
-		return result;
-	}
-	
-	double x;
-	double y;
-};
-
-class ParticleScene
+class ParticleScene: public SceneBase
 {
 
 public:
@@ -51,23 +36,14 @@ private:
 
 private:
 
-	Camera m_MainCamera;
-
-	GLFWwindow* m_MainWindow;
-
 	GLuint m_GridVB;
 	GLuint m_GridVAO;
-
 	int m_nGridLines;
 
 	ShaderProgram m_GridShader;
 	
-
 	ParticleSystem* m_ParticleSystem;
 
-	DFCoordinate2D m_FrameMousePosition;
-	bool m_MouseGrab;
 
-	float m_PreviousFrameTimestamp;
 
 };
